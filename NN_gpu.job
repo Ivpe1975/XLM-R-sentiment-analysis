@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#SBATCH --job-name=GPU_job
+#SBATCH --output=NN_gpu.out      # Name of output file (%j expands to jobId)
+#SBATCH --cpus-per-task=12
+#SBATCH --time=03:00:00
+#SBATCH --gres=gpu
+#SBATCH --partition=brown
+#SBATCH --mail-type=END
+
+echo "Running on $(hostname):"
+nvidia-smi
+module load Anaconda3/2021.05
+source /home/ivpe/.bashrc
+conda activate neural420
+python distilbert.py

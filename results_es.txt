@@ -1,0 +1,24 @@
+f_1 for German from Spanish: 0.9266409266409267
+f_1 for Japanese from Spanish: 0.8968799576943416
+f_1 for French from Spanish:0.9291139240506329
+f_1 for English from Spanish:0.9157245632065776
+f_1 for Spanish from Spanish:0.9454915944982171
+f_1 for Chinese from Spanish:0.8067892503536068
+Precision for German from Spanish: 0.9549071618037135
+Precision for Japanese from Spanish: 0.9517396184062851
+Precision for French from Spanish:0.941025641025641
+Precision for English from Spanish:0.9418604651162791
+Precision for Spanish from Spanish:0.9636552440290758
+Precision for Chinese from Spanish:0.9289902280130293
+Recall for German from Spanish: 0.9
+Recall for Japanese from Spanish: 0.848
+Recall for French from Spanish:0.9175
+Recall for English from Spanish:0.891
+Recall for Spanish from Spanish:0.928
+Recall for Chinese from Spanish:0.713
+Accuracy for German from Spanish: 92.875
+Accuracy for Japanese from Spanish: 90.25
+Accuracy for French from Spanish:93.0
+Accuracy for English from Spanish:91.8
+Accuracy for Spanish from Spanish:94.65
+Accuracy for Chinese from Spanish:82.925

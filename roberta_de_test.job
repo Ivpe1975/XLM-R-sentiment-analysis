@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#SBATCH --job-name=de_roberta
+#SBATCH --output=de_test_log.out      # Name of output file (%j expands to jobId)
+#SBATCH --cpus-per-task=8
+#SBATCH --time=05:00:00
+#SBATCH --gres=gpu
+#SBATCH --partition=brown
+#SBATCH --mail-type=END
+
+echo "Running on $(hostname):"
+nvidia-smi
+module load Anaconda3/2021.05
+source /home/ivpe/.bashrc
+conda activate neural420
+python roberta_de_test.py
