@@ -10,4 +10,6 @@ __   __ _     ___  ___      ______   _____            _   _                     
                                                                                                            |___/           
 
 Instructions to reproduce the resutls:
-1)
+1) Running any of the roberta_xx.py scripts will yield a model fine tuned on language xx and a results_xx.txt file which will hold all the f1 scores/accuracies for the fine-tuned model. The roberta_xx.job files are there if you are running it on the HPC cluster.
+2) The lang2vec notebook contains all of the calculations for the mean R^2 values of the distance types. Note that the f1 scores are manually input into the notebook by defining the results vector.
+3) The analysis notebook contains the pipeline for our quantatative and qualitative analysis. Before running it you will need to run roberta_de_test.py in order to get the wrong_ids, y_true and the y_pred vectors. In this case this is analysis of a sample model(fine-tuned on German predicting English)
