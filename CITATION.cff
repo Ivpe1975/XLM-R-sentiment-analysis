@@ -1,1 +1,9 @@
-
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - given-names: Ivan Petrov
+  - given-names: Jesper Terkildsen
+  - given-names: Daniel Hansen
+title: "XLM-RoBERTa Sentiment"
+version: 2.0.4
+date-released: 27-5-2022
