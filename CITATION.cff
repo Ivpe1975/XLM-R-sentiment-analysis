@@ -1,10 +1,13 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it as below."
+title: XLM-RoBERTa Sentiment
+message: 'If you use this software, please cite it as below.'
+type: software
 authors:
-  - given-names: Ivan Petrov
-  - given-names: Jesper Terkildsen
-  - given-names: Daniel Hansen
-title: "XLM-RoBERTa Sentiment"
-orcid: https://github.itu.dk/ivpe/XLM-ROberta-Sentiment
-version: 2.0.4
+  - given-names: Ivan
+    family-names: Petrov
+  - given-names: Jesper
+    family-names: Terkildsen
+  - given-names: Daniel
+    family-names: Hansen
 date-released: 27-5-2022
+
