@@ -7,7 +7,6 @@ __   __ _     ___  ___      ______   _____            _   _                     
 \/   \/\_____/\_|  |_/      \_| \_| \____/ \___|_| |_|\__|_|_| |_| |_|\___|_| |_|\__| \_| |_/_| |_|\__,_|_|\__, |___/_|___/
                                                                                                             __/ |          
                                                                                                            |___/           
-
 ```
 Instructions to reproduce the resutls:
 1) Start with downloading the Amazon reviews dataset from AWS( https://registry.opendata.aws/amazon-reviews-ml). It was too big to host on this github repo. Place the json folder into the same folder as ass the scripts. We have created the /json/dev/ folder in this repo to demonstrate where the files should be.
