@@ -5,5 +5,6 @@ authors:
   - given-names: Jesper Terkildsen
   - given-names: Daniel Hansen
 title: "XLM-RoBERTa Sentiment"
+orcid: https://github.itu.dk/ivpe/XLM-ROberta-Sentiment
 version: 2.0.4
 date-released: 27-5-2022
