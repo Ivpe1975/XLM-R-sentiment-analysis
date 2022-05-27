@@ -1,3 +1,4 @@
+```
 __   __ _     ___  ___      ______   _____            _   _                      _      ___              _           _     
 \ \ / /| |    |  \/  |      | ___ \ /  ___|          | | (_)                    | |    / _ \            | |         (_)    
  \ V / | |    | .  . |______| |_/ / \ `--.  ___ _ __ | |_ _ _ __ ___   ___ _ __ | |_  / /_\ \_ __   __ _| |_   _ ___ _ ___ 
@@ -7,7 +8,7 @@ __   __ _     ___  ___      ______   _____            _   _                     
                                                                                                             __/ |          
                                                                                                            |___/           
 
-
+```
 Instructions to reproduce the resutls:
 1) Start with downloading the Amazon reviews dataset from AWS( https://registry.opendata.aws/amazon-reviews-ml). It was too big to host on this github repo. Place the json folder into the same folder as ass the scripts. We have created the /json/dev/ folder in this repo to demonstrate where the files should be.
 1) You can reproduce the baseline model by running the baseline.py script. This will yield a baseline_metrics.txt file which will hold the f1 scores and the accuracies. 
