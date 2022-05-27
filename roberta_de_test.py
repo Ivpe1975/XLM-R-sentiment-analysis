@@ -265,7 +265,13 @@ wrong_ids=[]
 for idx,(pred,true) in enumerate(zip(y_pred,y_true)):
     if pred!=true:
         wrong_ids.append(idx)
-print(wrong_ids)
+with open('wrong_ids.txt','w+') as pred:
+    for idx, i in enumerate(wrong_ids):
+        if idx!=len(wrong_ids)-1:
+            pred.write(str(i)+',')
+        else:
+            pred.write(str(i))
+        
 with open('y_pred.txt','w+') as pred:
     for idx, i in enumerate(y_pred):
         if idx!=len(y_pred)-1:
@@ -278,39 +284,3 @@ with open('y_true.txt','w+') as pred:
             pred.write(str(i)+',')
         else:
             pred.write(str(i))
-# with open('results_de.txt','w+') as results:
-#     results.write('f_1 for German from German: ' + str(f1_score_de)+'\n')
-#     results.write('f_1 for Japanese from German: ' + str(f1_score_ja)+'\n')
-#     results.write('f_1 for French from German:' + str(f1_score_fr)+'\n')
-#     results.write('f_1 for English from German:' + str(f1_score_en)+ '\n')
-#     results.write('f_1 for Spanish from German:' + str(f1_score_es)+ '\n')
-#     results.write('f_1 for Chinese from German:' + str(f1_score_zh)+ '\n')
-#
-#     results.write('Precision for German from German: ' + str(precision_de)+'\n')
-#     results.write('Precision for Japanese from German: ' + str(precision_ja)+'\n')
-#     results.write('Precision for French from German:' + str(precision_fr)+'\n')
-#     results.write('Precision for English from German:' + str(precision_en)+ '\n')
-#     results.write('Precision for Spanish from German:' + str(precision_es)+ '\n')
-#     results.write('Precision for Chinese from German:' + str(precision_zh)+ '\n')
-#
-#     results.write('Recall for German from German: ' + str(recall_de)+'\n')
-#     results.write('Recall for Japanese from German: ' + str(recall_ja)+'\n')
-#     results.write('Recall for French from German:' + str(recall_fr)+'\n')
-#     results.write('Recall for English from German:' + str(recall_en)+ '\n')
-#     results.write('Recall for Spanish from German:' + str(recall_es)+ '\n')
-#     results.write('Recall for Chinese from German:' + str(recall_zh)+ '\n')
-#
-#     results.write('Accuracy for German from German: ' + str(epoch_accu_de)+'\n')
-#     results.write('Accuracy for Japanese from German: ' + str(epoch_accu_ja)+'\n')
-#     results.write('Accuracy for French from German:' + str(epoch_accu_fr)+'\n')
-#     results.write('Accuracy for English from German:' + str(epoch_accu_en)+ '\n')
-#     results.write('Accuracy for Spanish from German:' + str(epoch_accu_es)+ '\n')
-#     results.write('Accuracy for Chinese from German:' + str(epoch_accu_zh)+ '\n')
-
-
-# output_model_file = 'pytorch_roberta_de.bin'
-# output_vocab_file = 'de_vocab/'
-
-# model_to_save = model
-# torch.save(model_to_save, output_model_file)
-# tokenizer.save_vocabulary(output_vocab_file)
