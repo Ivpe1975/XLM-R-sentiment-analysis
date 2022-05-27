@@ -9,5 +9,6 @@ authors:
     family-names: Terkildsen
   - given-names: Daniel
     family-names: Hansen
+howpublished = {\url{https://github.itu.dk/ivpe/XLM-ROberta-Sentiment}}
 date-released: 27-5-2022
 
